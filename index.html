@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Estilos -->
+    <!-- Primeiro passo: adicione os estilos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Scripts -->
+    <!-- Segundo passo: adicione os scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     
-    <!-- Fontes -->
+    <!-- Terceiro passo: adicione as fontes, se desejar -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 
     <title>Document</title>
@@ -24,14 +24,19 @@
 
 <body>
 
+    <!-- Quarto passo: adicone os slides. Devem estar separados por divs. O HREF é o link para a página e o TITLE é a legenda. -->
     <div class="bxslider">
         <div>
             <img src="/assets/images/coffee1.jpg" href="http://google.com/" title="<h5>Funky</h5><span>Lorem ipsum dolor sit adipisicing elit.</span>">
         </div>
+        
         <div><img src="/assets/images/coffee2.jpg" href="http://google.com/" title="The long and winding road"></div>
+        
         <div><img src="/assets/images/coffee3.jpg" href="http://google.com/" title="Happy trees"></div>
+    
     </div>
 
+    <!-- Quinto passo: adicione os scripts -->
     <script>
         $(function () {
             $('.bxslider').bxSlider({
