@@ -1,0 +1,22 @@
+.bx-wrapper {
+  box-shadow: none !important;
+  border: 10px solid #ffe141eb;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.bx-wrapper .bx-caption {
+  font-size: 25px;
+  position: absolute;
+  bottom: 25px;
+  left: 5%;
+  background: #ffe141eb;
+  /* background: rgba(80, 80, 80, 0.75); */
+  width: auto;
+  max-width: 90%;
+}
+
+.bx-wrapper .bx-caption span {
+  color: #8761de;
+  font-family: 'Roboto Slab', serif;
+}

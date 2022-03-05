@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <div class="bxslider">
+        <div>
+            <img src="/assets/images/coffee1.jpg" href="http://google.com/" title="<h5>Funky</h5><span>Lorem ipsum dolor sit adipisicing elit.</span>">
+        </div>
+        <div><img src="/assets/images/coffee2.jpg" href="http://google.com/" title="The long and winding road"></div>
+        <div><img src="/assets/images/coffee3.jpg" href="http://google.com/" title="Happy trees"></div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                autoStart : true,
+                auto      : true,
+                captions  : true,
+                slideWidth: 600,
+                responsive: true,
+                mode      : 'fade',
+                easing    : "easing",
+                infiniteLoop: true,
+            });
+        });
+
+
+
+        if(window.navigator.userAgent.toLowerCase().indexOf("chrome") > 0) {
+            $("body").on("mousedown", ".bxslider img", function() { 
+                if($(this).attr("href") && $(this).attr("href") != "#") {
+                    window.location = $(this).attr("href"); 
+                } 
+            });     
+        } else {
+            $('.bxslider img').click(function(){
+                window.location = $(this).attr("href"); 
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
